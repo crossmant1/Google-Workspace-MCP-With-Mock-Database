@@ -2259,3 +2259,4 @@ app = Starlette(
     ],
     lifespan=mcp_asgi.lifespan,  # CRITICAL: Use mcp_asgi's lifespan
 )
+
