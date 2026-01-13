@@ -1,0 +1,31 @@
+# Web Framework
+fastapi>=0.110.0
+uvicorn[standard]>=0.30.0
+starlette>=0.37.0
+
+# MCP Framework
+fastmcp>=0.1.5
+
+# Configuration
+python-dotenv>=1.0.0
+pydantic>=2.4.0
+PyJWT
+
+# HTTP Requests
+requests>=2.31.0
+itsdangerous
+
+# Google APIs
+google-auth>=2.29.0
+google-auth-oauthlib>=1.2.0
+google-auth-httplib2>=0.2.0
+google-api-python-client>=2.122.0
+
+# Database
+pyodbc>=5.0.0
+
+# Security/Encryption
+cryptography>=42.0.0
+
+# Utilities
+packaging>=24.0
