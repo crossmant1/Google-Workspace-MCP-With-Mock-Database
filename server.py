@@ -40,25 +40,6 @@ AZURE_SQL_USERNAME = os.getenv("AZURE_SQL_USERNAME")
 AZURE_SQL_PASSWORD = os.getenv("AZURE_SQL_PASSWORD")
 DEFAULT_TIMEZONE = os.getenv("DEFAULT_TIMEZONE", "America/New_York")
 
-# Validate all required environment variables individually at startup
-missing_vars = []
-if not CLIENT_ID:
-    missing_vars.append("GOOGLE_CLIENT_ID")
-if not CLIENT_SECRET:
-    missing_vars.append("GOOGLE_CLIENT_SECRET")
-if not REDIRECT_URI:
-    missing_vars.append("GOOGLE_REDIRECT_URI")
-if not AZURE_SQL_SERVER:
-    missing_vars.append("AZURE_SQL_SERVER")
-if not AZURE_SQL_DATABASE:
-    missing_vars.append("AZURE_SQL_DATABASE")
-if not AZURE_SQL_USERNAME:
-    missing_vars.append("AZURE_SQL_USERNAME")
-if not AZURE_SQL_PASSWORD:
-    missing_vars.append("AZURE_SQL_PASSWORD")
-
-if missing_vars:
-    raise RuntimeError(f"Missing required environment variables: {', '.join(missing_vars)}")
 
 # Encryption key for tokens
 ENCRYPTION_KEY = os.getenv("ENCRYPTION_KEY")
